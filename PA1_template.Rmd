@@ -132,6 +132,8 @@ activity_imputed <-  #create the dataframe with imputed values
          date,  #keep this column
          interval) %>%  #keep this column
   rename(steps = steps_imputed)  #rename the column
+
+skim(activity_imputed)
 ```
 
 ## Question 7

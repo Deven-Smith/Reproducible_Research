@@ -580,7 +580,119 @@ activity_imputed &lt;-  #create the dataframe with imputed values
   select(steps_imputed,  #keep this column
          date,  #keep this column
          interval) %&gt;%  #keep this column
-  rename(steps = steps_imputed)  #rename the column</code></pre>
+  rename(steps = steps_imputed)  #rename the column
+
+skim(activity_imputed)</code></pre>
+<table>
+<caption>Data summary</caption>
+<tbody>
+<tr class="odd">
+<td align="left">Name</td>
+<td align="left">activity_imputed</td>
+</tr>
+<tr class="even">
+<td align="left">Number of rows</td>
+<td align="left">17568</td>
+</tr>
+<tr class="odd">
+<td align="left">Number of columns</td>
+<td align="left">3</td>
+</tr>
+<tr class="even">
+<td align="left">_______________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Column type frequency:</td>
+<td align="left"></td>
+</tr>
+<tr class="even">
+<td align="left">factor</td>
+<td align="left">1</td>
+</tr>
+<tr class="odd">
+<td align="left">numeric</td>
+<td align="left">2</td>
+</tr>
+<tr class="even">
+<td align="left">________________________</td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">Group variables</td>
+<td align="left">None</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: factor</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="left">ordered</th>
+<th align="right">n_unique</th>
+<th align="left">top_counts</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">date</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="left">FALSE</td>
+<td align="right">61</td>
+<td align="left">201: 288, 201: 288, 201: 288, 201: 288</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Variable type: numeric</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">skim_variable</th>
+<th align="right">n_missing</th>
+<th align="right">complete_rate</th>
+<th align="right">mean</th>
+<th align="right">sd</th>
+<th align="right">p0</th>
+<th align="right">p25</th>
+<th align="right">p50</th>
+<th align="right">p75</th>
+<th align="right">p100</th>
+<th align="left">hist</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">steps</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">37.38</td>
+<td align="right">105.32</td>
+<td align="right">0</td>
+<td align="right">0.00</td>
+<td align="right">0.0</td>
+<td align="right">27.00</td>
+<td align="right">806</td>
+<td align="left">▇▁▁▁▁</td>
+</tr>
+<tr class="even">
+<td align="left">interval</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">1177.50</td>
+<td align="right">692.45</td>
+<td align="right">0</td>
+<td align="right">588.75</td>
+<td align="right">1177.5</td>
+<td align="right">1766.25</td>
+<td align="right">2355</td>
+<td align="left">▇▇▇▇▇</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div id="question-7" class="section level2">
